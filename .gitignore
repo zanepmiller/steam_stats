@@ -1,3 +1,8 @@
 /data
+/out
+/test/__pycache__
+/.pytest_cache
+
 /.vscode
 .workspace
+steam_stats.code-workspace
