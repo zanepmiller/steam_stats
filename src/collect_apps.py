@@ -37,5 +37,5 @@ if __name__ == '__main__':
 #endregion
 
 #region App List Collection
-    j_applist = req_app_list(args.input)
+    j_applist = req_app_list(args.target)
 #endregion
