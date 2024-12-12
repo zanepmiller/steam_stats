@@ -3,11 +3,9 @@ import datetime
 import json
 
 import requests as req
-from bs4 import BeautifulSoup
-import lxml #   bs4 documentation says this is faster than the standard Python html parser
 
 def req_app_list(target : str):
-    app_list_path = f"{target}/applist_{datetime.datetime.today().hour}_{datetime.datetime.today().minute}.json"
+    app_list_path = f"{target}/applist_{datetime.datetime.today().hour}.{datetime.datetime.today().minute}.json"
 
     if os.path.isfile(target):
         if __name__ == '__main__': print(f"{target} already exists.")
