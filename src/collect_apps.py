@@ -21,7 +21,7 @@ def req_app_list(target : str):
     r = req.get('https://api.steampowered.com/ISteamApps/GetAppList/v2/')
     with open(app_list_path, mode='w', encoding='UTF8') as file:
         j = json.loads(r.text)
-        json.dump(j, file, indent=1)
+        json.dump(j, file, indent=1, ensure_ascii=False)
         if __name__ == '__main__': print(f"Wrote applist to {file.name}.")
 
 if __name__ == '__main__':
